@@ -4,16 +4,12 @@ role: "Software Engineer"
 updatedAt: 2026-04-06
 ---
 
-## 自己紹介
+## **自己紹介**
 
-バックエンド・クラウド基盤を中心に開発しています。
+ こんにちは、yusuke0610です。  
+ ソフトウェアエンジニアをしています。
 
-## スキル
+## **スキル**
 
-- Backend: Python / FastAPI
-- Cloud: GCP（Cloud Run / Vertex AI）
-- IaC: Terraform
-
-## 経歴
-
-詳細は随時更新予定。
+- Backend: **Python** / **Java**
+- Frontend: **React** / **Remix** / **Vite**
