@@ -12,4 +12,4 @@ updatedAt: 2026-04-06
 ## **スキル**
 
 - Backend: **Python** / **Java**
-- Frontend: **React** / **Remix** / **Vite**
+- Frontend: **TypeScript** / **React** / **Remix** / **Vite**
