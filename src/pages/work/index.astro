@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WorkCard from '../../components/WorkCard';
+
+const works = (await getCollection('work', ({ data }) => !data.draft))
+  .sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout title="Work | yusuke0610.com">
+  <h1 class="text-2xl font-bold text-gray-900">Work</h1>
+  <p class="mt-2 text-gray-600">個人で制作したプロジェクトの一覧です。</p>
+  <div class="mt-8 grid gap-4 sm:grid-cols-2">
+    {works.map((work) => (
+      <WorkCard
+        title={work.data.title}
+        description={work.data.description}
+        url={work.data.url}
+        github={work.data.github}
+        tags={work.data.tags}
+      />
+    ))}
+    {works.length === 0 && (
+      <p class="text-gray-500">まだプロジェクトがありません。</p>
+    )}
+  </div>
+</BaseLayout>

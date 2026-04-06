@@ -1,0 +1,25 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const aboutEntries = await getCollection('about');
+const about = aboutEntries[0];
+const { Content } = about ? await render(about) : { Content: null };
+---
+
+<BaseLayout
+  title={about ? `${about.data.name} | yusuke0610.com` : 'About | yusuke0610.com'}
+  description={about ? about.data.role : ''}
+>
+  {about ? (
+    <div>
+      <h1 class="text-2xl font-bold text-gray-900">{about.data.name}</h1>
+      <p class="mt-1 text-gray-600">{about.data.role}</p>
+      <div class="prose prose-gray mt-8 max-w-none">
+        {Content && <Content />}
+      </div>
+    </div>
+  ) : (
+    <p class="text-gray-500">自己紹介ページは準備中です。</p>
+  )}
+</BaseLayout>
