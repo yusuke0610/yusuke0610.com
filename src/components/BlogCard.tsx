@@ -14,7 +14,7 @@ export default function BlogCard({ title, description, publishedAt, slug, tags }
   }).format(publishedAt);
 
   return (
-    <a href={`${import.meta.env.BASE_URL}blog/${slug}`} className="block rounded-lg border border-gray-200 p-5 hover:border-gray-400 transition-colors">
+    <a href={`${import.meta.env.BASE_URL}/blog/${slug}`} className="block rounded-lg border border-gray-200 p-5 hover:border-gray-400 transition-colors">
       <time className="text-xs text-gray-500">{formattedDate}</time>
       <h2 className="mt-1 text-base font-semibold text-gray-900">{title}</h2>
       <p className="mt-1 text-sm text-gray-600 line-clamp-2">{description}</p>
