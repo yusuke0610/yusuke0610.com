@@ -28,7 +28,7 @@ export default function WorkCard({ title, description, url, github, tags }: Prop
             rel="noopener noreferrer"
             className="text-sm font-medium text-blue-600 hover:underline"
           >
-            サイトを見る →
+            サービスへ →
           </a>
         )}
         {github && (
