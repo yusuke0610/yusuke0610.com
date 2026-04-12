@@ -1,5 +1,5 @@
 ---
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const navLinks = [
   { href: `${base}/blog`, label: "Blog" },
@@ -16,14 +16,14 @@ const iconLinks = [
     </svg>`,
   },
   {
-    href: "https://zenn.dev/ywada0610",
+    href: "https://zenn.dev/fudge",
     label: "Zenn",
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 88 88" fill="currentColor" aria-hidden="true">
       <path d="M0 63.3h12.3L44 8.3 31.7 8.3zM19.8 63.3H88L56.3 8.3H44z"/>
     </svg>`,
   },
   {
-    href: "https://note.com/ywada0610",
+    href: "https://note.com/fudge",
     label: "note",
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M18.5 1h-13A4.5 4.5 0 0 0 1 5.5v13A4.5 4.5 0 0 0 5.5 23h13a4.5 4.5 0 0 0 4.5-4.5v-13A4.5 4.5 0 0 0 18.5 1zm-1.25 14.25a.75.75 0 0 1-.75.75H7.5a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75zm0-4.5a.75.75 0 0 1-.75.75H7.5a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75zm0-4.5a.75.75 0 0 1-.75.75H7.5a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75z"/>
@@ -47,9 +47,14 @@ const iconLinks = [
 ---
 
 <header class="border-b border-gray-200 bg-white">
-  <div class="mx-auto flex flex-col items-center gap-4 px-4 py-4 sm:max-w-3xl sm:flex-row sm:justify-between sm:gap-0">
-    <a href={`${base}/`} class="text-lg font-bold text-gray-900 hover:text-gray-600">
-      yusuke0610.com
+  <div
+    class="mx-auto flex flex-col items-center gap-4 px-4 py-4 sm:max-w-3xl sm:flex-row sm:justify-between sm:gap-0"
+  >
+    <a
+      href={`${base}/`}
+      class="text-lg font-bold text-gray-900 hover:text-gray-600"
+    >
+      fudge.com
     </a>
     <nav class="flex items-center gap-4 sm:gap-6">
       {

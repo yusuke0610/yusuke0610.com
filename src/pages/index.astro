@@ -8,13 +8,15 @@ const posts = (await getCollection("blog", ({ data }) => !data.draft))
   .slice(0, 3);
 ---
 
-<BaseLayout title="yusuke0610.com">
+<BaseLayout title="fudge.com">
   <section class="flex flex-col items-center sm:items-start">
-    <h1 class="text-3xl font-bold text-gray-900 sm:text-4xl">yusuke0610</h1>
-    <div class="mt-6 w-full sm:max-w-none max-w-md overflow-hidden rounded-2xl shadow-sm">
+    <h1 class="text-3xl font-bold text-gray-900 sm:text-4xl">fudge</h1>
+    <div
+      class="mt-6 w-full sm:max-w-none max-w-md overflow-hidden rounded-2xl shadow-sm"
+    >
       <img
         src={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/image0.png`}
-        alt="yusuke0610"
+        alt="fudge"
         class="h-auto w-full object-cover"
       />
     </div>

@@ -1,12 +1,12 @@
 ---
-name: "yusuke0610"
+name: "fudge"
 role: "Software Engineer"
 updatedAt: 2026-04-06
 ---
 
 ## **自己紹介**
 
- こんにちは、yusuke0610です。  
+ こんにちは、fudgeです。  
  ソフトウェアエンジニアをしています。
  個人サービスの開発など細々とやっています。
 
