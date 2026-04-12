@@ -1,2 +1,2 @@
-# yusuke0610.com
+# fudge.com
 個人ブログ

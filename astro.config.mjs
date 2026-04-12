@@ -4,8 +4,8 @@ import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://yusuke0610.github.io',
-  base: '/yusuke0610.com',
+  site: 'https://fudge.github.io',
+  base: '/fudge.com',
   output: 'static',
   integrations: [react()],
   vite: {
