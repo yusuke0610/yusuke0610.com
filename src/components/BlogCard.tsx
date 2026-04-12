@@ -14,10 +14,10 @@ export default function BlogCard({ title, description, publishedAt, slug, tags }
   }).format(publishedAt);
 
   return (
-    <a href={`${import.meta.env.BASE_URL}/blog/${slug}`} className="block rounded-lg border border-gray-200 p-5 hover:border-gray-400 transition-colors">
-      <time className="text-xs text-gray-500">{formattedDate}</time>
-      <h2 className="mt-1 text-base font-semibold text-gray-900">{title}</h2>
-      <p className="mt-1 text-sm text-gray-600 line-clamp-2">{description}</p>
+    <a href={`${import.meta.env.BASE_URL}/blog/${slug}`} className="block rounded-xl border border-gray-200 p-4 sm:p-5 hover:border-gray-400 transition-colors bg-white shadow-sm hover:shadow-md">
+      <time className="text-xs text-gray-500 font-medium">{formattedDate}</time>
+      <h2 className="mt-1 text-lg font-bold text-gray-900 leading-tight">{title}</h2>
+      <p className="mt-2 text-sm text-gray-600 line-clamp-2 leading-relaxed">{description}</p>
       {tags.length > 0 && (
         <div className="mt-3 flex flex-wrap gap-1">
           {tags.map((tag) => (
